@@ -188,7 +188,7 @@ print(k)
 #   -5
 #   Вывод:
 #   5
-d = int (input ("Input d: "))
+d = int (input ("Задание 16 Input d: "))
 print ("d =", end=" ")
 print (abs(-d))
 # ---- ФУНКЦИИ PRINT(), INPUT() ----
@@ -267,12 +267,14 @@ print (s2)
 a = int (input ("input a: "))
 b = int (input ("input b: "))
 c = pow(a, b)
+print ("вывод: ", end=" ")
 print (c)
 
-a = float (input ("input a.-: "))
-b = float (input ("input b.-: "))
+
+a = float (input (" повторим input a: "))
+b = float (input ("повторим input b: "))
 c = pow(a, b)
-print (c)
+print (f"а в степени b будет",c)
 
 # Задание 6. Выберите команду, которая позволяет сохранять одно целое введенное с клавиатуры число.
 #     - [x] d = int(input())
@@ -294,7 +296,7 @@ print (c)
 #   19.0
 a, b = map(float, input("Введите два числа, разделенных пробелом: ").split())
 c = (a+b)
-print (c)
+print (f"вывод", c)
 # сделал при помощи жипити
 
 
@@ -318,6 +320,7 @@ import math
 
 print (math.pi)
 pi=round(math.pi,3)
+print ("вывод:")
 print (pi)
 # Не знал, как сделать обращался к жпт, насколько я понял надо всегда импортировать math!
 
