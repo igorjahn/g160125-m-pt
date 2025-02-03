@@ -18,6 +18,43 @@
 #     "Bob": {"age": 25, "department": "IT", "salary": 6000},
 #     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
 # }
+# employees = {
+#     "Alice": {"age": 30, "department": "HR", "salary": 5000},
+#     "Bob": {"age": 25, "department": "IT", "salary": 6000},
+#     "Charlie": {"age": 35, "department": "Finance", "salary": 7000}
+# }
+# print(employees.keys())
+#
+# Var: 1
+#
+# total_salary = 0
+# for details in employees.values():
+# #    print(details["salary"])
+#     total_salary += details["salary"]
+# print(total_salary)
+#
+# Var: 2
+#
+# total_salary = sum(details["salary"] for details in employees.values())
+# print(total_salary)
+# # 3. Добавьте нового сотрудника "David" с возрастом 28, отделом "IT" и зарплатой 6500.
+# employees["David"]= dict(age=28, department="IT", salary=6500)
+# print(employees)
+# # 4. Обновите зарплату "Alice" до 5500.
+# employees["Alice"]["salary"]= 5500
+# print(employees)
+# # 5. Удалите сотрудника "Charlie".
+# del employees["Charlie"]
+# print(employees)
+# # 6. Выведите данные о каждом сотруднике в формате:
+# # "Имя: {name}, Возраст: {age}, Отдел: {department}, Зарплата: {salary}"
+# for employee in employees:
+#
+#     name = employee
+#     age = employees[employee]["age"]
+#     department = employees[employee]["department"]
+#     salary = employees[employee]["salary"]
+#     print(f"Имя: {name}, Возраст: {age}, Отдел: {department}, Зарплата: {salary}")
 
 
 # Задача 2: Управление запасами товаров
@@ -38,6 +75,24 @@
 #     "Cherries": {"quantity": 20, "price": 3},
 # }
 
+# inventory = {
+#     "Apples": {"quantity": 50, "price": 2},
+#     "Bananas": {"quantity": 30, "price": 1},
+#     "Cherries": {"quantity": 20, "price": 3},
+# }
+# print(inventory.keys())
+# inventory["Apples"]["quantity"]+= 10
+# print(inventory)
+# inventory["Bananas"]["price"] = 1.5
+# print(inventory)
+# del inventory["Cherries"]
+# inventory["Dates"] = {"quantity": 15, "price": 4}
+# print(inventory)
+#
+# total_cost = 0
+# for item in inventory:
+#     total_cost += inventory[item]["quantity"] * inventory[item]["price"]
+# print("Общая стоимость всех товаров:", total_cost, "Euro")
 
 # Тема: кортежи и множества.
 
@@ -53,6 +108,20 @@
 # 5. Выведите все координаты, отсортированные по оси x.
 #
 # coordinates = [(10, 20), (30, 40), (50, 60)]
+
+# coordinates = [(10, 20), (30, 40), (50, 60)]
+# total_x = 0
+# total_y = 0
+# for x ,y in coordinates:
+#     total_x+=x
+#     total_y+=y
+#
+# print(total_x , total_y)
+# coordinates.append((70, 80))
+# print(coordinates)
+# coordinates[0]=(15,25)
+# print(coordinates)
+# print(sorted(coordinates, key=lambda x: x[0]))
 
 
 # Задача 2: Обработка данных о продуктах

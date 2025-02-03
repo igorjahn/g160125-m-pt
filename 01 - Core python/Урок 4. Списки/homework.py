@@ -197,7 +197,14 @@ while True:
         tasks.append([len(tasks)+1, task, False])
     elif choice == "2":
         print(tasks)
-
+    elif choice == "3":
+        task = int(input("Введите номер задачи: "))
+        tasks [task -1][2] = True
+    elif choice == "4":
+        task_number = int(input ("введите номер задачи"))
+        tasks.pop (task_number -1)
+    else:
+        print("Nekoerektny Vvod")
 
 
 
