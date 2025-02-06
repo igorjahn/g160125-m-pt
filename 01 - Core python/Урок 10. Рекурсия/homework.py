@@ -69,7 +69,7 @@ def list_length(lst):
         return 0
     return 1 + list_length(lst[1:])
 #
-print(list_length([1, 2, 3, 4, 5])) # Вывод: 5cc
+print(list_length([1, 2, 3, 4, 5])) # Вывод: 5
 
 
 # Тема: Дополнительная практика на функции
