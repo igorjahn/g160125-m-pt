@@ -126,7 +126,7 @@ responses = [
 responses = sorted(responses, key=lambda x: x["status"])
 responses = list(map(lambda x: (responses.index(x), x["url"], x["status"]), responses))
 responses = [
-    (i, response["url"], response["status"])
-    for i, response in
-    enumerate(responses)
+    response
+    for i, response in enumerate(responses)
 ]
+print(responses)
